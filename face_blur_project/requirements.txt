@@ -1,0 +1,43 @@
+# =============================================================================
+# Face Blur on Surveillance Videos & Images — Dependencies
+# =============================================================================
+#
+# Install all dependencies:
+#     pip install -r requirements.txt
+#
+# For GPU acceleration (recommended):
+#     pip install onnxruntime-gpu
+#     (Ensure CUDA toolkit is installed)
+#
+# For CPU-only:
+#     pip install onnxruntime
+#
+# External requirement:
+#     ffmpeg must be installed and on PATH for audio preservation.
+#     Download: https://ffmpeg.org/download.html
+# =============================================================================
+
+# ── Core ─────────────────────────────────────────────────────────────────────
+numpy>=1.24.0
+opencv-python>=4.8.0
+Pillow>=10.0.0
+
+# ── Deep Learning ────────────────────────────────────────────────────────────
+torch>=2.0.0
+torchvision>=0.15.0
+
+# ── Face Detection (InsightFace with RetinaFace) ─────────────────────────────
+insightface>=0.7.3
+onnxruntime>=1.16.0            # CPU inference; replace with onnxruntime-gpu for GPU
+
+# ── Multi-Object Tracking (ByteTrack via supervision) ────────────────────────
+supervision>=0.21.0
+
+# ── Video Processing ─────────────────────────────────────────────────────────
+ffmpeg-python>=0.2.0           # Python bindings for ffmpeg (ffmpeg binary required)
+
+# ── Utilities ────────────────────────────────────────────────────────────────
+tqdm>=4.65.0                   # Progress bars
+
+# ── Web UI (Streamlit) ──────────────────────────────────────────────────────
+streamlit>=1.30.0
