@@ -1,5 +1,7 @@
 #  Face Blur on Surveillance Videos & Images
 
+> **Note:** For the complete code, use this repo: [https://github.com/abhilashrajuuu/Face-Blur-on-Video-Chunks.git](https://github.com/abhilashrajuuu/Face-Blur-on-Video-Chunks.git)
+
 A **production-grade** Python pipeline for detecting and anonymising every visible human face in surveillance-style videos and images using deep learning.
 
 Built with **InsightFace/RetinaFace** for detection, **ByteTrack** for tracking, and **OpenCV** for processing.
